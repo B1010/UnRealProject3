@@ -27,24 +27,22 @@ namespace UnRealProject3
         private void button1_Click(object sender, EventArgs e)
         {
             double[] massY = { 0, 0, 0, 0, 0 };
-            double srednee_max_temp = 0, srednee_min_temp = 0;
             double srednee_max = 0, srednee_min = 0;
 
             for (int i = 1; i < repeat; i++)
             {
                 onerandomresult();
-                srednee_max_temp += massY_result.Max();
-                srednee_min_temp += massY_result.Min();
+                srednee_max += massY_result.Max();
+                srednee_min += massY_result.Min();
 
-                massY[0] += massY_result[0];
-                massY[1] += massY_result[1];
-                massY[2] += massY_result[2];
-                massY[3] += massY_result[3];
-                massY[4] += massY_result[4];
+                for (int j = 0; j < 5; j++)
+                {
+                    massY[j] += massY_result[j];
+                }
             }
 
-            srednee_max = srednee_max_temp / repeat;
-            srednee_min = srednee_min_temp / repeat;
+            srednee_max /= repeat;
+            srednee_min /= repeat;
 
             for(int i = 0; i < 5; i++)
             {
@@ -61,24 +59,22 @@ namespace UnRealProject3
         private void button2_Click(object sender, EventArgs e)
         {
             double[] massY = { 0, 0, 0, 0, 0 };
-            double srednee_max_temp = 0, srednee_min_temp = 0;
             double srednee_max = 0, srednee_min = 0;
 
             for (int i = 1; i < repeat; i++)
             {
                 tworandomresult();
-                srednee_max_temp += massY_result.Max();
-                srednee_min_temp += massY_result.Min();
+                srednee_max += massY_result.Max();
+                srednee_min += massY_result.Min();
 
-                massY[0] += massY_result[0];
-                massY[1] += massY_result[1];
-                massY[2] += massY_result[2];
-                massY[3] += massY_result[3];
-                massY[4] += massY_result[4];
+                for (int j = 0; j < 5; j++)
+                {
+                    massY[j] += massY_result[j];
+                }
             }
 
-            srednee_max = srednee_max_temp / repeat;
-            srednee_min = srednee_min_temp / repeat;
+            srednee_max /= repeat;
+            srednee_min /= repeat;
 
             for (int i = 0; i < 5; i++)
             {
@@ -95,24 +91,22 @@ namespace UnRealProject3
         private void button3_Click(object sender, EventArgs e)
         {
             double[] massY = { 0, 0, 0, 0, 0 };
-            double srednee_max_temp = 0, srednee_min_temp = 0;
             double srednee_max = 0, srednee_min = 0;
 
             for (int i = 1; i < repeat; i++)
             {
                 threerandomresult();
-                srednee_max_temp += massY_result.Max();
-                srednee_min_temp += massY_result.Min();
+                srednee_max += massY_result.Max();
+                srednee_min += massY_result.Min();
 
-                massY[0] += massY_result[0];
-                massY[1] += massY_result[1];
-                massY[2] += massY_result[2];
-                massY[3] += massY_result[3];
-                massY[4] += massY_result[4];
+                for (int j = 0; j < 5; j++)
+                {
+                    massY[j] += massY_result[j];
+                }
             }
 
-            srednee_max = srednee_max_temp / repeat;
-            srednee_min = srednee_min_temp / repeat;
+            srednee_max /= repeat;
+            srednee_min /= repeat;
 
             for (int i = 0; i < 5; i++)
             {
