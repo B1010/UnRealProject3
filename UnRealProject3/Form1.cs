@@ -14,8 +14,8 @@ namespace UnRealProject3
         RandomMethods random = new RandomMethods();
         Thread[] thread = new Thread[5];
 
-        static int arraysize = 10000;
-        static int repeat = 20;
+        static int arraysize = 10000; //Размер массива
+        static int repeat = 20; //Количество повторов для усреднения результата
         int[] iarray = new int[arraysize];
         int[] array1 = new int[arraysize], array2 = new int[arraysize], array3 = new int[arraysize], array4 = new int[arraysize], array5 = new int[arraysize];
 
