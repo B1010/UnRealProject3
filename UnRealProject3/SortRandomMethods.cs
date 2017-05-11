@@ -56,7 +56,7 @@ namespace UnRealProject3
             return time1.TotalSeconds;
         }
 
-        public double MethodThree(int[] array)//Шелла
+        public double MethodThree(int[] array) //Шелла
         {
             DateTime time0 = DateTime.Now;
             int j;
@@ -81,7 +81,7 @@ namespace UnRealProject3
             return time1.TotalSeconds;
         }
 
-        public double MethodFour(int[] array)//Блочная
+        public double MethodFour(int[] array) //Блочная
         {
             DateTime time0 = DateTime.Now;
             int maxValue = array[0];
